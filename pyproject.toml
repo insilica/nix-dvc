@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "nix-dvc"
+version = "2.41.1"
+description = ""
+authors = ["John Shaffer <john@insilica.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+dvc = "==2.41.1"
+dvc-http = "^2.30.0"
+dvc-s3 = "^2.21.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
