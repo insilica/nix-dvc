@@ -787,14 +787,14 @@ pgp = ["gpg"]
 
 [[package]]
 name = "dvc"
-version = "2.41.1"
+version = "2.43.1"
 description = "Git for data scientists - manage your code and data together"
 category = "main"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "dvc-2.41.1-py3-none-any.whl", hash = "sha256:a3fafd63c3e9bedd278add480d62be38b7f51db891e14e37d754c986c6bc284d"},
-    {file = "dvc-2.41.1.tar.gz", hash = "sha256:d875358ce2463b0b93de1e4a91ee8ca960793b96462048e72f40d3168ae5e97c"},
+    {file = "dvc-2.43.1-py3-none-any.whl", hash = "sha256:4de11bc356faf0eddf1eaf936a632d9ca59f34a4714a5664a11ed546276a4c8e"},
+    {file = "dvc-2.43.1.tar.gz", hash = "sha256:b4f6079590b4f5c79d7dc580099036bbfe1893e8722ba5d23390e87fab6778c5"},
 ]
 
 [package.dependencies]
@@ -803,21 +803,20 @@ colorama = ">=0.3.9"
 configobj = ">=5.0.6"
 distro = ">=1.3.0"
 dpath = ">=2.0.2,<3"
-dvc-data = "0.29.0"
+dvc-data = "0.35.1"
 dvc-http = "*"
 dvc-render = "0.0.17"
 dvc-studio-client = ">=0.1.1"
-dvc-task = "0.1.9"
-dvclive = ">=1.2.2"
+dvc-task = "0.1.11"
 flatten-dict = ">=0.4.1,<1"
 "flufl.lock" = ">=5"
 funcy = ">=1.14"
-grandalf = "0.6"
+grandalf = ">=0.7,<1"
 hydra-core = ">=1.1.0"
 iterative-telemetry = "0.0.6"
 networkx = ">=2.5"
 packaging = ">=19.0"
-pathspec = ">=0.9.0,<0.10.0"
+pathspec = ">=0.10.3"
 psutil = ">=5.8.0"
 pydot = ">=1.2.4"
 pygtrie = ">=2.3.2"
@@ -825,7 +824,7 @@ pyparsing = ">=2.4.7"
 requests = ">=2.22.0"
 rich = ">=10.13.0"
 "ruamel.yaml" = ">=0.17.11"
-scmrepo = "0.1.5"
+scmrepo = "0.1.6"
 shortuuid = ">=0.5.0"
 shtab = ">=1.3.4,<2"
 tabulate = ">=0.8.7"
@@ -837,43 +836,44 @@ voluptuous = ">=0.11.7"
 
 [package.extras]
 all = ["dvc[azure,gdrive,gs,hdfs,oss,s3,ssh,webdav,webhdfs]"]
-azure = ["dvc-azure (==2.20.5)"]
+azure = ["dvc-azure (==2.21.0)"]
 dev = ["dvc[azure,gdrive,gs,hdfs,oss,s3,ssh,tests,webdav,webhdfs]"]
 gdrive = ["dvc-gdrive (==2.19.1)"]
 gs = ["dvc-gs (==2.20.0)"]
 hdfs = ["dvc-hdfs (==2.19.0)"]
 oss = ["dvc-oss (==2.19.0)"]
 s3 = ["dvc-s3 (==2.21.0)"]
-ssh = ["dvc-ssh (==2.20.0)"]
-ssh-gssapi = ["dvc-ssh[gssapi] (==2.20.0)"]
+ssh = ["dvc-ssh (==2.21.0)"]
+ssh-gssapi = ["dvc-ssh[gssapi] (==2.21.0)"]
 terraform = ["tpi[ssh] (>=2.1.0)"]
 testing = ["pytest-test-utils (==0.0.8)"]
-tests = ["beautifulsoup4 (==4.11.1)", "dvc-ssh (==2.20.0)", "filelock (==3.9.0)", "flaky (==3.7.0)", "mypy (==0.991)", "pylint (==2.15.10)", "pylint-plugin-utils (==0.7)", "pylint-pytest (==1.1.2)", "pytest (==7.2.0)", "pytest-cov (==4.0.0)", "pytest-docker (==0.11.0)", "pytest-lazy-fixture (==0.6.3)", "pytest-mock (==3.10.0)", "pytest-test-utils (==0.0.8)", "pytest-timeout (==2.1.0)", "pytest-xdist (==3.1.0)", "pywin32 (>=225)", "tpi[ssh] (>=2.1.0)", "types-requests", "types-tabulate", "types-toml"]
+tests = ["beautifulsoup4 (==4.11.1)", "dvc-ssh (==2.21.0)", "filelock (==3.9.0)", "flaky (==3.7.0)", "mypy (==0.991)", "pylint (==2.15.10)", "pytest (==7.2.1)", "pytest-cov (==4.0.0)", "pytest-docker (==0.11.0)", "pytest-lazy-fixture (==0.6.3)", "pytest-mock (==3.10.0)", "pytest-test-utils (==0.0.8)", "pytest-timeout (==2.1.0)", "pytest-xdist (==3.1.0)", "pywin32 (>=225)", "tpi[ssh] (>=2.1.0)", "types-appdirs", "types-colorama", "types-psutil", "types-requests", "types-tabulate", "types-toml", "types-tqdm"]
 webdav = ["dvc-webdav (==2.19.0)"]
 webhdfs = ["dvc-webhdfs (==2.19.0)"]
 webhdfs-kerberos = ["dvc-webhdfs[kerberos] (==2.19.0)"]
 
 [[package]]
 name = "dvc-data"
-version = "0.29.0"
+version = "0.35.1"
 description = "dvc data"
 category = "main"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "dvc-data-0.29.0.tar.gz", hash = "sha256:3385054422b66738948690d96944bc547f2f26edfa5776bc0c0a4f9f64a8cc42"},
-    {file = "dvc_data-0.29.0-py3-none-any.whl", hash = "sha256:004ee9c20971e17c26dbf0ef59ce38dde1c03612e55d81a91b1331ff71774bb5"},
+    {file = "dvc-data-0.35.1.tar.gz", hash = "sha256:490c651855286a7ff3814d982351330ea2d72fd61c9d753ff0a873c2aa682945"},
+    {file = "dvc_data-0.35.1-py3-none-any.whl", hash = "sha256:28a885314e30e93482d49b218ff0a8220c5acac6a4ebe15e13cdce2d50d97c82"},
 ]
 
 [package.dependencies]
 attrs = ">=21.3.0"
 dictdiffer = ">=0.8.1"
 diskcache = ">=5.2.1"
-dvc-objects = "0.14.1"
+dvc-objects = "0.19.0"
 funcy = ">=1.14"
 nanotime = ">=0.5.2"
 pygtrie = ">=2.3.2"
 shortuuid = ">=0.5.0"
+sqltrie = "0.0.26"
 
 [package.extras]
 all = ["rich (>=10.11.0,<13.0.0)", "typer[all] (>=0.6)"]
@@ -883,33 +883,30 @@ tests = ["mypy (==0.971)", "pylint (==2.15.0)", "pytest (==7.2.0)", "pytest-benc
 
 [[package]]
 name = "dvc-http"
-version = "2.30.0"
+version = "2.30.1"
 description = "http plugin for dvc"
 category = "main"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "dvc-http-2.30.0.tar.gz", hash = "sha256:66ca32c7c7d9b36b1812dc0e385364ae5cbf0b62085282b601577f0e0d5cf39e"},
-    {file = "dvc_http-2.30.0-py3-none-any.whl", hash = "sha256:ca4b39c3a77360b762f822cdb9e5adfb4bf86e38843a12cecf5f57c41ac0b280"},
+    {file = "dvc-http-2.30.1.tar.gz", hash = "sha256:371c89bb91f9c99e6afdec24d829b7bb3dd57c79e416b5f46016da293e6a7552"},
+    {file = "dvc_http-2.30.1-py3-none-any.whl", hash = "sha256:aa3fa056498d51ba5c53083a97aa8197328bae53a3285366707023eb6f14733d"},
 ]
 
 [package.dependencies]
 aiohttp-retry = ">=2.5.0"
 fsspec = {version = "*", extras = ["http"]}
 
-[package.extras]
-tests = ["dvc[testing]", "flaky (==3.7.0)", "mypy (==0.910)", "pylint (==2.15.9)", "pytest (==6.2.5)", "pytest-cov (==3.0.0)", "pytest-mock (==3.6.1)", "pytest-xdist (==2.4.0)", "rangehttpserver (==1.2.0)", "types-requests (==2.25.11)"]
-
 [[package]]
 name = "dvc-objects"
-version = "0.14.1"
+version = "0.19.0"
 description = "dvc objects"
 category = "main"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "dvc-objects-0.14.1.tar.gz", hash = "sha256:181ad4eadaee592cd37a5027b2c8b4727ca00aba7ae60e8417075dd4e5ef0d42"},
-    {file = "dvc_objects-0.14.1-py3-none-any.whl", hash = "sha256:36587b4a0e1eec1778998070fd804cd5feac33b03fe7f8bbcb191110631977ec"},
+    {file = "dvc-objects-0.19.0.tar.gz", hash = "sha256:6a1b0e2b5ad861b86b50f3d866e5b973cf18cd105116205d80ecd0d710dff9f1"},
+    {file = "dvc_objects-0.19.0-py3-none-any.whl", hash = "sha256:d73b27daf56fda30608f862585c69b84e9f49b3429ba76aa91ecfcf493cac7ea"},
 ]
 
 [package.dependencies]
@@ -989,14 +986,14 @@ tests = ["pytest (==7.2.0)", "pytest-cov (==3.0.0)", "pytest-mock (==3.8.2)", "p
 
 [[package]]
 name = "dvc-task"
-version = "0.1.9"
+version = "0.1.11"
 description = "Extensible task queue used in DVC."
 category = "main"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "dvc-task-0.1.9.tar.gz", hash = "sha256:e2bc6e257fc363fa9e960d727e59cc5b0a40c4355f475bd8a0f1e22fb0ea2a8c"},
-    {file = "dvc_task-0.1.9-py3-none-any.whl", hash = "sha256:539b8e45e29d5c082edc917b19ab2937b48a551ea33966a4d3a1e906e2ecc262"},
+    {file = "dvc-task-0.1.11.tar.gz", hash = "sha256:ea22d9f715c73b468a1bd645cec8c31320abda99d5753410caaf57f1fdcaac88"},
+    {file = "dvc_task-0.1.11-py3-none-any.whl", hash = "sha256:90804f22d5d2e5be3470a87dc8772c940fcdcb986ee53fe5dc266cf14423cfcb"},
 ]
 
 [package.dependencies]
@@ -1010,41 +1007,6 @@ shortuuid = ">=1.0.8"
 dev = ["celery-types (>=0.11.0)", "flaky (==3.7.0)", "mkdocs (==1.3.1)", "mkdocs-gen-files (==0.3.5)", "mkdocs-material (==8.4.1)", "mkdocs-section-index (==0.3.4)", "mkdocstrings-python (==0.7.1)", "mypy (==0.971)", "pylint (==2.15.0)", "pytest (==7.2.0)", "pytest-celery", "pytest-cov (==3.0.0)", "pytest-mock (==3.8.2)", "pytest-sugar (==0.9.5)", "pytest-test-utils (>=0.0.6)"]
 docs = ["mkdocs (==1.3.1)", "mkdocs-gen-files (==0.3.5)", "mkdocs-material (==8.4.1)", "mkdocs-section-index (==0.3.4)", "mkdocstrings-python (==0.7.1)"]
 tests = ["celery-types (>=0.11.0)", "flaky (==3.7.0)", "mypy (==0.971)", "pylint (==2.15.0)", "pytest (==7.2.0)", "pytest-celery", "pytest-cov (==3.0.0)", "pytest-mock (==3.8.2)", "pytest-sugar (==0.9.5)", "pytest-test-utils (>=0.0.6)"]
-
-[[package]]
-name = "dvclive"
-version = "1.3.2"
-description = "Metric logger for ML projects."
-category = "main"
-optional = false
-python-versions = ">=3.8"
-files = [
-    {file = "dvclive-1.3.2-py3-none-any.whl", hash = "sha256:60fa7dbcb8abbaa0707c4984c1b5bbfff9d3b980a76d26e5b8371057972af6e8"},
-    {file = "dvclive-1.3.2.tar.gz", hash = "sha256:0b2996e57aa37c3308d51ef3bf76a8754ea5a749d7ba1f6af4bf94b53a614279"},
-]
-
-[package.dependencies]
-dvc-render = {version = ">=0.0.12", extras = ["table"]}
-dvc-studio-client = ">=0.3.0"
-"ruamel.yaml" = ">=0.17.11"
-
-[package.extras]
-all = ["catalyst (>22)", "datasets", "dvc (>=2.38.1)", "fastai", "lightgbm", "matplotlib", "mmcv", "numpy", "pillow", "pytorch-lightning (>=1.7)", "scikit-learn", "tensorflow", "torch (<1.13)", "transformers", "xgboost"]
-catalyst = ["catalyst (>22)"]
-dev = ["catalyst (>22)", "datasets", "dvc (>=2.38.1)", "fastai", "lightgbm", "matplotlib", "mmcv", "mypy (==0.981)", "numpy", "pillow", "pylint (==2.15.0)", "pylint-plugin-utils (>=0.6)", "pytest (==7.2.0)", "pytest-cov (==3.0.0)", "pytest-mock (==3.8.2)", "pytest-sugar (==0.9.5)", "pytorch-lightning (>=1.7)", "scikit-learn", "tensorflow", "torch (<1.13)", "transformers", "xgboost"]
-dvc = ["dvc (>=2.38.1)"]
-fastai = ["fastai"]
-huggingface = ["datasets", "transformers"]
-image = ["numpy", "pillow"]
-lgbm = ["lightgbm"]
-markdown = ["matplotlib"]
-mmcv = ["mmcv"]
-plots = ["scikit-learn"]
-pytorch-lightning = ["pytorch-lightning (>=1.7)", "torch (<1.13)"]
-sklearn = ["scikit-learn"]
-tests = ["dvc (>=2.38.1)", "matplotlib", "mypy (==0.981)", "numpy", "pillow", "pylint (==2.15.0)", "pylint-plugin-utils (>=0.6)", "pytest (==7.2.0)", "pytest-cov (==3.0.0)", "pytest-mock (==3.8.2)", "pytest-sugar (==0.9.5)", "scikit-learn"]
-tf = ["tensorflow"]
-xgb = ["xgboost"]
 
 [[package]]
 name = "filelock"
@@ -1095,14 +1057,14 @@ psutil = ">=5.9.0"
 
 [[package]]
 name = "fsspec"
-version = "2022.11.0"
+version = "2023.1.0"
 description = "File-system specification"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "fsspec-2022.11.0-py3-none-any.whl", hash = "sha256:d6e462003e3dcdcb8c7aa84c73a228f8227e72453cd22570e2363e8844edfe7b"},
-    {file = "fsspec-2022.11.0.tar.gz", hash = "sha256:259d5fd5c8e756ff2ea72f42e7613c32667dc2049a4ac3d84364a7ca034acb8b"},
+    {file = "fsspec-2023.1.0-py3-none-any.whl", hash = "sha256:b833e2e541e9e8cde0ab549414187871243177feb3d344f9d27b25a93f5d8139"},
+    {file = "fsspec-2023.1.0.tar.gz", hash = "sha256:fbae7f20ff801eb5f7d0bedf81f25c787c0dfac5e982d98fa3884a9cde2b5411"},
 ]
 
 [package.dependencies]
@@ -1145,17 +1107,6 @@ files = [
 ]
 
 [[package]]
-name = "future"
-version = "0.18.3"
-description = "Clean single-source support for Python 3 and 2"
-category = "main"
-optional = false
-python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
-files = [
-    {file = "future-0.18.3.tar.gz", hash = "sha256:34a17436ed1e96697a86f9de3d15a3b0be01d8bc8de9c1dffd59fb8234ed5307"},
-]
-
-[[package]]
 name = "gitdb"
 version = "4.0.10"
 description = "Git Object Database"
@@ -1187,19 +1138,16 @@ gitdb = ">=4.0.1,<5"
 
 [[package]]
 name = "grandalf"
-version = "0.6"
+version = "0.8"
 description = "Graph and drawing algorithms framework"
 category = "main"
 optional = false
 python-versions = "*"
 files = [
-    {file = "grandalf-0.6-py2-none-any.whl", hash = "sha256:d671fdfa5310f2639538b6c858c4b1aef7755535ccfcb9c1cdf0d29171326add"},
-    {file = "grandalf-0.6-py3-none-any.whl", hash = "sha256:357946e2fd35fc92c327cf3c091acc5aef93e0c74c60fed0a727d827ab3b1272"},
-    {file = "grandalf-0.6.tar.gz", hash = "sha256:7471db231bd7338bc0035b16edf0dc0c900c82d23060f4b4d0c4304caedda6e4"},
+    {file = "grandalf-0.8-py3-none-any.whl", hash = "sha256:793ca254442f4a79252ea9ff1ab998e852c1e071b863593e5383afee906b4185"},
 ]
 
 [package.dependencies]
-future = "*"
 pyparsing = "*"
 
 [package.extras]
@@ -1468,6 +1416,60 @@ antlr4-python3-runtime = ">=4.9.0,<4.10.0"
 PyYAML = ">=5.1.0"
 
 [[package]]
+name = "orjson"
+version = "3.8.5"
+description = "Fast, correct Python JSON library supporting dataclasses, datetimes, and numpy"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "orjson-3.8.5-cp310-cp310-macosx_10_7_x86_64.whl", hash = "sha256:143639b9898b094883481fac37733231da1c2ae3aec78a1dd8d3b58c9c9fceef"},
+    {file = "orjson-3.8.5-cp310-cp310-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl", hash = "sha256:31f43e63e0d94784c55e86bd376df3f80b574bea8c0bc5ecd8041009fa8ec78a"},
+    {file = "orjson-3.8.5-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:c802ea6d4a0d40f096aceb5e7ef0a26c23d276cb9334e1cadcf256bb090b6426"},
+    {file = "orjson-3.8.5-cp310-cp310-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:bf298b55b371c2772420c5ace4d47b0a3ea1253667e20ded3c363160fd0575f6"},
+    {file = "orjson-3.8.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:68cb4a8501a463771d55bb22fc72795ec7e21d71ab083e000a2c3b651b6fb2af"},
+    {file = "orjson-3.8.5-cp310-cp310-manylinux_2_28_x86_64.whl", hash = "sha256:4f1427952b3bd92bfb63a61b7ffc33a9f54ec6de296fa8d924cbeba089866acb"},
+    {file = "orjson-3.8.5-cp310-cp310-musllinux_1_1_aarch64.whl", hash = "sha256:c0a9f329468c8eb000742455b83546849bcd69495d6baa6e171c7ee8600a47bd"},
+    {file = "orjson-3.8.5-cp310-cp310-musllinux_1_1_x86_64.whl", hash = "sha256:6535d527aa1e4a757a6ce9b61f3dd74edc762e7d2c6991643aae7c560c8440bd"},
+    {file = "orjson-3.8.5-cp310-none-win_amd64.whl", hash = "sha256:2eee64c028adf6378dd714c8debc96d5b92b6bb4862debb65ca868e59bac6c63"},
+    {file = "orjson-3.8.5-cp311-cp311-macosx_10_7_x86_64.whl", hash = "sha256:f5745ff473dd5c6718bf8c8d5bc183f638b4f3e03c7163ffcda4d4ef453f42ff"},
+    {file = "orjson-3.8.5-cp311-cp311-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl", hash = "sha256:544f1240b295083697027a5093ec66763218ff16f03521d5020e7a436d2e417b"},
+    {file = "orjson-3.8.5-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:c85c9c6bab97a831e7741089057347d99901b4db2451a076ca8adedc7d96297f"},
+    {file = "orjson-3.8.5-cp311-cp311-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:9bae7347764e7be6dada980fd071e865544c98317ab61af575c9cc5e1dc7e3fe"},
+    {file = "orjson-3.8.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:c67f6f6e9d26a06b63126112a7bc8d8529df048d31df2a257a8484b76adf3e5d"},
+    {file = "orjson-3.8.5-cp311-cp311-manylinux_2_28_x86_64.whl", hash = "sha256:758238364142fcbeca34c968beefc0875ffa10aa2f797c82f51cfb1d22d0934e"},
+    {file = "orjson-3.8.5-cp311-none-win_amd64.whl", hash = "sha256:cc7579240fb88a626956a6cb4a181a11b62afbc409ce239a7b866568a2412fa2"},
+    {file = "orjson-3.8.5-cp37-cp37m-macosx_10_7_x86_64.whl", hash = "sha256:79aa3e47cbbd4eedbbde4f988f766d6cf38ccb51d52cfabfeb6b8d1b58654d25"},
+    {file = "orjson-3.8.5-cp37-cp37m-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl", hash = "sha256:2544cd0d089faa862f5a39f508ee667419e3f9e11f119a6b1505cfce0eb26601"},
+    {file = "orjson-3.8.5-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:f2be0025ca7e460bcacb250aba8ce0239be62957d58cf34045834cc9302611d3"},
+    {file = "orjson-3.8.5-cp37-cp37m-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:0b57bf72902d818506906e49c677a791f90dbd7f0997d60b14bc6c1ce4ce4cf9"},
+    {file = "orjson-3.8.5-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:93ae9832a11c6a9efa8c14224e5caf6e35046efd781de14e59eb69ab4e561cf3"},
+    {file = "orjson-3.8.5-cp37-cp37m-manylinux_2_28_x86_64.whl", hash = "sha256:0e28330cc6d51741cad0edd1b57caf6c5531aff30afe41402acde0a03246b8ed"},
+    {file = "orjson-3.8.5-cp37-cp37m-musllinux_1_1_aarch64.whl", hash = "sha256:155954d725627b5480e6cc1ca488afb4fa685099a4ace5f5bf21a182fabf6706"},
+    {file = "orjson-3.8.5-cp37-cp37m-musllinux_1_1_x86_64.whl", hash = "sha256:ece1b6ef9312df5d5274ca6786e613b7da7de816356e36bcad9ea8a73d15ab71"},
+    {file = "orjson-3.8.5-cp37-none-win_amd64.whl", hash = "sha256:6f58d1f0702332496bc1e2d267c7326c851991b62cf6395370d59c47f9890007"},
+    {file = "orjson-3.8.5-cp38-cp38-macosx_10_7_x86_64.whl", hash = "sha256:933f4ab98362f46a59a6d0535986e1f0cae2f6b42435e24a55922b4bc872af0c"},
+    {file = "orjson-3.8.5-cp38-cp38-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl", hash = "sha256:47a7ca236b25a138a74b2cb5169adcdc5b2b8abdf661de438ba65967a2cde9dc"},
+    {file = "orjson-3.8.5-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:b573ca942c626fcf8a86be4f180b86b2498b18ae180f37b4180c2aced5808710"},
+    {file = "orjson-3.8.5-cp38-cp38-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:a9bab11611d5452efe4ae5315f5eb806f66104c08a089fb84c648d2e8e00f106"},
+    {file = "orjson-3.8.5-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:eee2f5f6476617d01ca166266d70fd5605d3397a41f067022ce04a2e1ced4c8d"},
+    {file = "orjson-3.8.5-cp38-cp38-manylinux_2_28_x86_64.whl", hash = "sha256:ec0b0b6cd0b84f03537f22b719aca705b876c54ab5cf3471d551c9644127284f"},
+    {file = "orjson-3.8.5-cp38-cp38-musllinux_1_1_aarch64.whl", hash = "sha256:df3287dc304c8c4556dc85c4ab89eb333307759c1863f95e72e555c0cfce3e01"},
+    {file = "orjson-3.8.5-cp38-cp38-musllinux_1_1_x86_64.whl", hash = "sha256:09f40add3c2d208e20f8bf185df38f992bf5092202d2d30eced8f6959963f1d5"},
+    {file = "orjson-3.8.5-cp38-none-win_amd64.whl", hash = "sha256:232ec1df0d708f74e0dd1fccac1e9a7008cd120d48fe695e8f0c9d80771da430"},
+    {file = "orjson-3.8.5-cp39-cp39-macosx_10_7_x86_64.whl", hash = "sha256:8fba3e7aede3e88a01e94e6fe63d4580162b212e6da27ae85af50a1787e41416"},
+    {file = "orjson-3.8.5-cp39-cp39-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl", hash = "sha256:85e22c358cab170c8604e9edfffcc45dd7b0027ce57ed6bcacb556e8bfbbb704"},
+    {file = "orjson-3.8.5-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:eeab1d8247507a75926adf3ca995c74e91f5db1f168815bf3e774f992ba52b50"},
+    {file = "orjson-3.8.5-cp39-cp39-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:daaaef15a41e9e8cadc7677cefe00065ae10bce914eefe8da1cd26b3d063970b"},
+    {file = "orjson-3.8.5-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:6ccc9f52cf46bd353c6ae1153eaf9d18257ddc110d135198b0cd8718474685ce"},
+    {file = "orjson-3.8.5-cp39-cp39-manylinux_2_28_x86_64.whl", hash = "sha256:d48c182c7ff4ea0787806de8a2f9298ca44fd0068ecd5f23a4b2d8e03c745cb6"},
+    {file = "orjson-3.8.5-cp39-cp39-musllinux_1_1_aarch64.whl", hash = "sha256:1848e3b4cc09cc82a67262ae56e2a772b0548bb5a6f9dcaee10dcaaf0a5177b7"},
+    {file = "orjson-3.8.5-cp39-cp39-musllinux_1_1_x86_64.whl", hash = "sha256:38480031bc8add58effe802291e4abf7042ef72ae1a4302efe9a36c8f8bfbfcc"},
+    {file = "orjson-3.8.5-cp39-none-win_amd64.whl", hash = "sha256:0e9a1c2e649cbaed410c882cedc8f3b993d8f1426d9327f31762d3f46fe7cc88"},
+    {file = "orjson-3.8.5.tar.gz", hash = "sha256:77a3b2bd0c4ef7723ea09081e3329dac568a62463aed127c1501441b07ffc64b"},
+]
+
+[[package]]
 name = "packaging"
 version = "23.0"
 description = "Core utilities for Python packages"
@@ -1481,14 +1483,14 @@ files = [
 
 [[package]]
 name = "pathspec"
-version = "0.9.0"
+version = "0.10.3"
 description = "Utility library for gitignore style pattern matching of file paths."
 category = "main"
 optional = false
-python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
+python-versions = ">=3.7"
 files = [
-    {file = "pathspec-0.9.0-py2.py3-none-any.whl", hash = "sha256:7d15c4ddb0b5c802d161efc417ec1a2558ea2653c2e8ad9c19098201dc1c993a"},
-    {file = "pathspec-0.9.0.tar.gz", hash = "sha256:e564499435a2673d586f6b2130bb5b95f04a3ba06f81b8f895b651a3c76aabb1"},
+    {file = "pathspec-0.10.3-py3-none-any.whl", hash = "sha256:3c95343af8b756205e2aba76e843ba9520a24dd84f68c22b9f93251507509dd6"},
+    {file = "pathspec-0.10.3.tar.gz", hash = "sha256:56200de4077d9d0791465aa9095a01d421861e405b5096955051deefd697d6f6"},
 ]
 
 [[package]]
@@ -1853,24 +1855,24 @@ files = [
 
 [[package]]
 name = "s3fs"
-version = "2022.11.0"
+version = "2023.1.0"
 description = "Convenient Filesystem interface over S3"
 category = "main"
 optional = false
 python-versions = ">= 3.7"
 files = [
-    {file = "s3fs-2022.11.0-py3-none-any.whl", hash = "sha256:42d57a3ceedb478b18ee53e34bbe3305a3f07f6381ca1ab76135efe076c6a07d"},
-    {file = "s3fs-2022.11.0.tar.gz", hash = "sha256:10c5ac283a4f5b67ffad6d1f25ff7ee026142750c5c5dc868746cd904f617c33"},
+    {file = "s3fs-2023.1.0-py3-none-any.whl", hash = "sha256:a549ae518fff4388bd6fca5248575c29f521e7e39efcd2bfab476651701fd114"},
+    {file = "s3fs-2023.1.0.tar.gz", hash = "sha256:8b2e28372423e93f26312208a9272e22a962ddd0a79d63f9a68693b6af5ff187"},
 ]
 
 [package.dependencies]
-aiobotocore = ">=2.4.0,<2.5.0"
+aiobotocore = ">=2.4.2,<2.5.0"
 aiohttp = "<4.0.0a0 || >4.0.0a0,<4.0.0a1 || >4.0.0a1"
-fsspec = "2022.11.0"
+fsspec = "2023.1.0"
 
 [package.extras]
-awscli = ["aiobotocore[awscli] (>=2.4.0,<2.5.0)"]
-boto3 = ["aiobotocore[boto3] (>=2.4.0,<2.5.0)"]
+awscli = ["aiobotocore[awscli] (>=2.4.2,<2.5.0)"]
+boto3 = ["aiobotocore[boto3] (>=2.4.2,<2.5.0)"]
 
 [[package]]
 name = "s3transfer"
@@ -1892,14 +1894,14 @@ crt = ["botocore[crt] (>=1.20.29,<2.0a.0)"]
 
 [[package]]
 name = "scmrepo"
-version = "0.1.5"
+version = "0.1.6"
 description = "SCM wrapper and fsspec filesystem for Git for use in DVC"
 category = "main"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "scmrepo-0.1.5-py3-none-any.whl", hash = "sha256:95d798e5ce248ad311c7b4fb71b18b47698e1c89111ccdc730e39fa2cc95b417"},
-    {file = "scmrepo-0.1.5.tar.gz", hash = "sha256:27cdbc3c5ead363a2ed6f9b0d7cd38d9df2c3225bf4044b3d56ec90fa437e095"},
+    {file = "scmrepo-0.1.6-py3-none-any.whl", hash = "sha256:d714a20a3189c8436bb8e8601b0141ac182dc1ea3f0e6ea5ac31ab873ecdeb4f"},
+    {file = "scmrepo-0.1.6.tar.gz", hash = "sha256:ed083676c3da26eb98d9fe43b7f00814094109be1c51c023143070187eebf4d6"},
 ]
 
 [package.dependencies]
@@ -1908,7 +1910,7 @@ dulwich = ">=0.20.46"
 fsspec = ">=2021.7.0"
 funcy = ">=1.14"
 gitpython = ">3"
-pathspec = ">=0.9.0,<0.10.0"
+pathspec = ">=0.9.0"
 pygit2 = ">=1.10.0"
 pygtrie = ">=2.3.2"
 
@@ -1918,14 +1920,14 @@ tests = ["mock (==4.0.3)", "mypy (==0.971)", "paramiko (==2.12.0)", "pylint (==2
 
 [[package]]
 name = "setuptools"
-version = "66.0.0"
+version = "66.1.1"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "setuptools-66.0.0-py3-none-any.whl", hash = "sha256:a78d01d1e2c175c474884671dde039962c9d74c7223db7369771fcf6e29ceeab"},
-    {file = "setuptools-66.0.0.tar.gz", hash = "sha256:bd6eb2d6722568de6d14b87c44a96fac54b2a45ff5e940e639979a3d1792adb6"},
+    {file = "setuptools-66.1.1-py3-none-any.whl", hash = "sha256:6f590d76b713d5de4e49fe4fbca24474469f53c83632d5d0fd056f7ff7e8112b"},
+    {file = "setuptools-66.1.1.tar.gz", hash = "sha256:ac4008d396bc9cd983ea483cb7139c0240a07bbc74ffb6232fceffedc6cf03a8"},
 ]
 
 [package.extras]
@@ -1980,6 +1982,25 @@ files = [
     {file = "smmap-5.0.0-py3-none-any.whl", hash = "sha256:2aba19d6a040e78d8b09de5c57e96207b09ed71d8e55ce0959eeee6c8e190d94"},
     {file = "smmap-5.0.0.tar.gz", hash = "sha256:c840e62059cd3be204b0c9c9f74be2c09d5648eddd4580d9314c3ecde0b30936"},
 ]
+
+[[package]]
+name = "sqltrie"
+version = "0.0.26"
+description = "SQL-based prefix tree inspired by pygtrie and python-diskcache"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "sqltrie-0.0.26-py3-none-any.whl", hash = "sha256:9fd767d47ab9102b069ce65bb293c33c59665657f0469aacec0a850f3cf8fca6"},
+    {file = "sqltrie-0.0.26.tar.gz", hash = "sha256:c2989a1b643e95bb29f5c2514ceaa07e70524f76622788064be90a6cd14145e0"},
+]
+
+[package.dependencies]
+orjson = {version = "*", markers = "implementation_name == \"cpython\""}
+
+[package.extras]
+dev = ["mypy (==0.971)", "pygtrie", "pyinstaller", "pylint (==2.15.0)", "pytest (==7.2.0)", "pytest-benchmark", "pytest-cov (==3.0.0)", "pytest-mock (==3.8.2)", "pytest-sugar (==0.9.5)"]
+tests = ["mypy (==0.971)", "pygtrie", "pyinstaller", "pylint (==2.15.0)", "pytest (==7.2.0)", "pytest-benchmark", "pytest-cov (==3.0.0)", "pytest-mock (==3.8.2)", "pytest-sugar (==0.9.5)"]
 
 [[package]]
 name = "tabulate"
@@ -2277,4 +2298,4 @@ test = ["zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "1d1a50bbdb042dd1649c42355e308bf630ebd44c149554fd6a77d619ffa078a3"
+content-hash = "37125b51bccf13eb918789dbce597b607ddc3078d822d9e571fc3d62f15c4849"
